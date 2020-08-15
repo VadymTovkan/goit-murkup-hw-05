@@ -37,7 +37,7 @@
         <div class="hero_content">
         <h1 class="">Эффективные решения для вашего бизнеса</h1>
         <div class="container_4">
-        <button class="button" href="">Заказать услугу</button>
+        <button class="button" data-modal-open href="">Заказать услугу</button>
         </div>
         </div>
       </section>
@@ -101,19 +101,19 @@
         <div class="">
         <div class="container_3">
         <h2 class="section_title">Чем мы занимаемся</h2>
-        <ul class="container_4">
-          <li class="section_1_title">
-            <img src="./images/img2-1.svg" alt="" width="370" />
-            <div>Десктопные приложения</div>
-          </li>
-          <li class="section_1_title">
-            <img src="./images/img2-2.svg" alt="" width="370" />
-            <div>Мобильные приложения</div>
-          </li>
-          <li class="section_1_title">
-            <img src="./images/img2-3.svg" alt="" width="370" />
-            <div>Дизайнерские решения</div>
-          </li>
+        <div class="container_4">
+          <div class="pic">
+            <img src="./images/img_new1.svg" alt="" width="370" />
+            <h3 class="pic_des"> <span class="h3_span">Десктопные приложения</h3></span>
+          </div>
+          <div class="pic">
+            <img src="./images/img_new2.svg" alt="" width="370" />
+            <h3 class="pic_des"> <span class="h3_span">Мобильные приложения</h3></span>
+          </div>
+          <div class="pic">
+            <img src="./images/img_new3.svg" alt="" width="370" />
+            <h3 class="pic_des"><span class="h3_span"> Дизайнерские решения</span> </h3>
+          </div>
         </ul>
         </div>
       
@@ -373,5 +373,12 @@
     </div>
     </footer>
     </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-close" data-modal-close>X</button>
+        <p class="message">This is modal</p>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
